@@ -1,0 +1,14 @@
+<!-- sidebar: style can be found in sidebar.less -->
+<section class="sidebar">
+
+    <!-- Sidebar user panel (optional) -->
+    <!-- Sidebar Menu -->
+    <ul class="sidebar-menu">
+        <!-- Optionally, you can add icons to the links -->
+
+        <li {% if '/dashboard' in request.path %}class="active"{% endif %}><a href="{% url 'dashboard' %}"><i class="glyphicon glyphicon-th-list"></i> <span>Dashboard</span></a></li>
+
+    </ul>
+    <!-- /.sidebar-menu -->
+</section>
+<!-- /.sidebar -->

@@ -1,0 +1,55 @@
+{% extends 'admin/login/login.html' %}
+
+{% block form_data %}
+  <div class="login-box-body">
+        <h4 class="text-center box-title">Register</h4>
+        <br>
+        <p class="login-box-msg">Please populate all fields for registration process.</p>
+
+        <form  method="post">
+             {% csrf_token %}
+            <div class="form-group has-feedback">
+                {{ form.first_name }}
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                {{ form.last_name }}
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                {{ form.email }}
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+
+            <div class="form-group has-feedback">
+                {{ form.password }}
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                {{ form.repeat_password }}
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+
+            <div class="clearfix">
+                <div class="text-center">
+                    <br>
+                    {% if error_messages %}
+                        <p class="text-warning">{{ error_messages }}</p>
+                    {% endif %}
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <!-- /.col -->
+                <div class="col-xs-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <br>
+                    <a href="{% url 'login' %}">Log in</a>
+                </div>
+                <!-- /.col -->
+            </div>
+        </form>
+    </div>
+{% endblock %}

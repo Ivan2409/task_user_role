@@ -1,0 +1,6 @@
+Django==2.0.2
+django-custom-user==0.7
+psycopg2==2.7.3.2
+simplejson==3.13.2
+Pillow==4.3.0
+djangorestframework==3.7.7

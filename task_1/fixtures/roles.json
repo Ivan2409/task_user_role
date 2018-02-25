@@ -1,0 +1,23 @@
+[
+  {
+    "fields": {
+      "name": "Admin"
+    },
+    "model": "app.customuserrole",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "name": "Manager"
+    },
+    "model": "app.customuserrole",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "name": "User"
+    },
+    "model": "app.customuserrole",
+    "pk": 3
+  }
+]

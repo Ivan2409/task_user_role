@@ -1,0 +1,8 @@
+/*
+File Name: 		custom.css
+Description:  You can add your custom CSS here and it will overwrite template styles
+*/
+
+.activate_cursor:hover{
+    cursor: pointer;
+}
